@@ -1,21 +1,23 @@
-- 👋 Hi, I’m @kiffyto
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+package main
 
-new update
+import "fmt"
 
-rm -rf kiffy
+type Person struct {
+  name string
+  username string
+  age int
+  hobbies []string
+  job string
+}
 
-git clone https://github.com/kiffyto/sarap
-
-cd sarap
-
-git pull
-
-ls
-
-python crackingtool_enc.py
+func main() {
+  var me = new(Person)
+  
+  me.name     = "Niño Infiesto"
+  me.username = "KIFFY"
+  me.age      = "20"
+  me.job      = "MODI FILE CLONE | Web developer"
+  me.hobbies  = []string{"code", "anime", "music"," guiterist"," gaming"}
+  
+  fmt.Println(me)
+}
